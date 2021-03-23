@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Đối tượng temperature</title>
+</head>
+<body>
+
+</body>
+<script>
+let Temperature = function (doC) {
+  this.doC = doC;
+  this.doF = doC * 1.8 +32 ;
+  this.doKevin = doC + 273.15;
+}
+let Temperature1 = new Temperature(25)
+let a = Temperature1.doC
+let b = Temperature1.doF
+let c = Temperature1.doKevin
+document.write('Nhiệt độ ở 25 độ C có : ' + b + ' độ F và ' + c + ' độ Kevin')
+</script>
+</html>
